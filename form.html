@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title> Form Validations </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Contents about Technology">
+            <meta name="keywords" content="HTML,CSS,Javasript">
+            <meta name="author" content="Saturday Okposio">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css"  href="form.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="script.js" defer></script>
+            
+        
+        
+    </head>
+    <body>
+        <form action="registration.html" method="POST" name="students_form" id="students_form" >
+        <fieldset>
+            <div class="schname">
+            <h1>Dominic Coding College Form</p></h1>
+            </div>
+
+            <div class="img"  >
+                <img src="IMG-20200707-WA0014 (1).jpg"  width="150" height="150" alt="my picture" >
+
+            </div>
+                
+                
+
+            </div>
+            
+            <div class="details">
+            <h2>Student Personal Details</h2>
+            </div>
+        
+             <div class="firstname" >
+            
+                <label for="fname"><b>First Name :</b></label>
+                <input type="text" id="fname" value=""  placeholder="firstname" required><p>
+                </div>
+
+             <div class="lastname">
+            <label for="lname"><b>Last Name :</b></label>
+            <input type="text" id="lname" value="" placeholder="lastname" required ><p>
+            </div> 
+
+            <div class="birthday">
+            <label for="birthdate"><b>Date of Birth :</b></label>
+            <input type="date" id="datetest" name="datetest" placeholder="date of birth" required><p>
+            </div>
+
+             <div class="gender">
+             <label for="gender"><b>Gender :</b></label> 
+              <select id="gender" name="gender">
+             <option></option>
+             <option >Male</option> 
+            <option>Female</option>
+               </select><br>
+            </div>
+               <br>
+               <div class="email">
+               <label for="email"><b>Enter your email :</b></label>
+               <input type="email" id="email" name="email" placeholder=" E-mail" required><br>
+               </div>
+               <br> 
+               <div class="telephone"></div>
+               <label for="tel" ><b>Student Telephone number :</b></label>
+               <input type="tel" id="home" name="tel-home" placeholder="telephone number" required><br>
+            </div>
+               <br>
+               <label for="number"><b>Parent  Phone Number:</b></label>
+               <input type="telephone" id="number" name="number" placeholder="123-456-789" required><br>
+               <br>
+               <div class="courses" >
+               <b> Please kindly click on the subjects related to you :
+                
+                <div class="courses">
+                    
+                    
+                    <label><input type="checkbox" value="" />HTML</label>
+                    <label><input type="checkbox" value=""/>CSS</label>
+                    <label><input type="checkbox" value=""/>Javascript</label>
+                    <label><input type="checkbox" value=""/>Python</label>
+                    <label><input type="checkbox" value=""/>PHP</label>
+                    <label><input type="checkbox" value=""/>WORDPRESS</label>
+                    <label><input type="checkbox" value=""/>JAVA</label>
+                    <label><input type="checkbox" value=""/>REACT NATIVE</label>
+                    <label><input type="checkbox" value=""/>JQUERY</label>
+                    <label><input type="checkbox" value=""/>REACT</label>
+                                       
+                </div>
+                      <br> 
+                <div class="pass">
+                    <br>
+                    <br>
+               <lable for="psw"><b>Password :</b></lable>
+               <input type="password" id="password"  placeholder=" enter password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" name="password" required>
+               <br>
+               <br>
+               
+               <label for="psw-repeat"><b>Repeat Password:</b></label>
+               <input type="password" placeholder="Repeat Password"  pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" name="psw-repeat" required> 
+               <br>
+               <input type="submit" value="Submit"> 
+               </div>
+
+                  
+        </div>
+    </fieldset><br>
+    <hr>
+    <fieldset>
+        <legend><h2>School Confidential</h2></legend>
+        <label for="teacher">Class Teacher Name :</label>
+        <input type="text" id="text" name="text" required><br>
+        <br>
+        <label for="class">Class :</label>
+        <input type="text" id="text" id="text" name="text" required >
+
+    </fieldset>
+    
+          
+
+        </form>
+        <hr>
+
+
+
+        <div class="footer-bottom">
+            &copy; Dominic Coding College Design by Sat-Coding-Tech
+        </div>
+        
+            <div class="social">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> 
+                
+                                          
+            </div>
+           
+            
+            
+            
+        
+    
+    </body>
+
+
+</html>
